@@ -9,7 +9,6 @@ Basically, every native (platform-specific) HTTP server/library instance is wrap
 In order to get the `HttpAdapter` from the outside of the application context, you can call `getHttpAdapter()` method.
 
 ```typescript
-@@filename()
 const app = await NestFactory.create(ApplicationModule);
 const httpAdapter = app.getHttpAdapter();
 ```
